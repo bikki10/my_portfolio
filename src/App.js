@@ -5,7 +5,6 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Technologies from "./components/Technologies";
-import {motion} from "framer-motion";
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
         </div>
         <div className="container mx-auto px-8">
           <Navbar />
-          
           <Hero />
           <About />
           <Technologies />
