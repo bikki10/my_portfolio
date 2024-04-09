@@ -51,10 +51,10 @@ const Projects = () => {
                   );
                 })}
                 <div className="flex">
-                  <a href={project.gitLink} target="_blank">
+                  <a href={project.gitLink} target="_blank" rel="noreferrer">
                     <AiOutlineGithub className="text-5xl pt-4" />
                   </a>
-                  <a href={project.link} target="_blank">
+                  <a href={project.link} target="_blank" rel="noreferrer">
                     <AiOutlineLink className="text-5xl pt-4" />
                   </a>
                 </div>
