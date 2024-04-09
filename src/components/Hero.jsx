@@ -1,3 +1,4 @@
+import { HiOutlineExternalLink } from "react-icons/hi";
 import profilePic from "../assets/kevinRushProfile.png";
 import { HERO_CONTENT } from "../constants";
 import { motion } from "framer-motion";
@@ -21,6 +22,7 @@ const Hero = () => {
             >
               Bikram Bhusal
             </motion.h1>
+            
             <motion.span
               variants={container(0.5)}
               initial="hidden"
@@ -37,6 +39,20 @@ const Hero = () => {
             >
               {HERO_CONTENT}
             </motion.p>
+            <motion.div
+              initial={{ y: -50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 1 }}
+            >
+              <a
+                rel="noreferrer"
+                href="https://drive.google.com/file/d/1wuVlKPeL2u-HoyUeEyfQeFCUHYI4-Eh3/view?usp=sharing"
+                target="_blank"
+                className="flex border mb-2 border-neutral-400 p-2 gap-2 rounded-lg hover:bg-cyan-400 hover:text-neutral-800 hover:border-cyan-400 hover:ease-in-out duration-200 delay-50 bg- items-center justify-center font-tight tracking-tight"
+              >
+                <HiOutlineExternalLink/>  My Resume 
+              </a>
+            </motion.div>
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">
