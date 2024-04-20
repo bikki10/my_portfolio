@@ -41,7 +41,7 @@ export const PROJECTS = [
   {
     title: "E-Commerce Website",
     image: project1,
-    gitLink: "https://github.com/Buddha-Innovations-Tech/jai_ho_frontend",
+    gitLink: "https://github.com/",
     link: "https://jai-ho-frontend.vercel.app/",
     description:
       "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
@@ -59,8 +59,8 @@ export const PROJECTS = [
   {
     title: "Portfolio Website",
     image: project3,
-    gitLink: "https://github.com/bikki10/My-Portfolio-Website",
-    link: "https://www.bikrambhusal.com.np",
+    gitLink: "https://github.com/bikki10/my_portfolio",
+    link: "https://www.bikram.vercel.app",
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["HTML", "CSS", "React", "Tailwind"],
