@@ -1,5 +1,5 @@
 import { HiOutlineExternalLink } from "react-icons/hi";
-import profilePic from "../assets/kevinRushProfile.png";
+import profilePic from "../assets/bikramProfile.png";
 import { HERO_CONTENT } from "../constants";
 import { motion } from "framer-motion";
 
@@ -10,10 +10,13 @@ var container = (delay) => ({
 
 const Hero = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4 lg:mb-35">
-      <div className="flex flex-wrap">
-        <div className="w-full lg:w-1/2">
-          <div className="flex flex-col items-center lg:items-start">
+    <main className="border-b border-neutral-900 pb-4 lg:mb-35">
+      <section className="flex flex-wrap lg:justify-between justify-center">
+        <div>
+          <section
+            aria-live="polite"
+            className="flex flex-col items-center lg:items-start"
+          >
             <motion.h1
               variants={container(0)}
               initial="hidden"
@@ -22,20 +25,20 @@ const Hero = () => {
             >
               Bikram Bhusal
             </motion.h1>
-            
+
             <motion.span
               variants={container(0.5)}
               initial="hidden"
               animate="visible"
               className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"
             >
-              Aspiring Web Developer
+              Web Developer | ML Enthusiast
             </motion.span>
             <motion.p
               variants={container(1)}
               initial="hidden"
               animate="visible"
-              className="my-2 max-w-xl py-6 font-light tracking-tighter"
+              className="my-2 max-w-xl py-6 font-light tracking-tighter leading-relaxed"
             >
               {HERO_CONTENT}
             </motion.p>
@@ -43,31 +46,31 @@ const Hero = () => {
               initial={{ y: -50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1 }}
+              className="mb-4"
             >
               <a
                 rel="noreferrer"
-                href="https://drive.google.com/file/d/1wuVlKPeL2u-HoyUeEyfQeFCUHYI4-Eh3/view?usp=sharing"
+                href="https://drive.google.com/file/d/15BlXhJZeoLTYC-nUZ71dEtCR4-XEeYdb/view?usp=sharing"
                 target="_blank"
-                className="flex border mb-2 border-neutral-400 p-2 gap-2 rounded-lg hover:bg-cyan-400 hover:text-neutral-800 hover:border-cyan-400 hover:ease-in-out duration-200 delay-50 bg- items-center justify-center font-tight tracking-tight"
+                className="flex border mb-2 border-neutral-400 p-2 gap-2 rounded-lg hover:bg-cyan-400 hover:text-neutral-800 hover:border-cyan-400 hover:ease-in-out duration-200 delay-50 items-center justify-center font-tight tracking-tight"
               >
-                <HiOutlineExternalLink/>  My Resume 
+                <HiOutlineExternalLink /> My Resume
               </a>
             </motion.div>
-          </div>
+          </section>
         </div>
-        <div className="w-full lg:w-1/2 lg:p-8">
-          <div className="flex justify-center">
-            <motion.img
-              initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1, delay: 1.2 }}
-              src={profilePic}
-              alt="profilePic"
-            />
-          </div>
+        <div className="flex justify-center items-center">
+          <motion.img
+            className="rounded-2xl"
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            src={profilePic}
+            alt="profilePic"
+          />
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 
