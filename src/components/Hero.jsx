@@ -61,7 +61,7 @@ const Hero = () => {
         </div>
         <div className="flex justify-center items-center">
           <motion.img
-            className="rounded-2xl"
+            className="sm:rounded-2xl rounded-full"
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
