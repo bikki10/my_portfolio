@@ -1,17 +1,18 @@
 import { HiOutlineExternalLink } from "react-icons/hi";
-import profilePic from "../assets/bikramProfile.png";
+import profilePic from "../assets/bikramHero.jpg";
 import { HERO_CONTENT } from "../constants";
 import { motion } from "framer-motion";
+import React,{ forwardRef } from "react";
 
 var container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
   visible: { x: 0, opacity: 1, transition: { duration: 0.5, delay: delay } },
 });
 
-const Hero = () => {
+const Hero = forwardRef((props,ref) => {
   return (
-    <main className="border-b border-neutral-900 pb-4 lg:mb-35">
-      <section className="flex flex-wrap lg:justify-between justify-center">
+    <main ref={ref} className="border-b border-neutral-900 pb-4 lg:mb-35">
+      <section className="flex flex-wrap-reverse lg:flex-nowrap lg:justify-between justify-center gap-4">
         <div>
           <section
             aria-live="polite"
@@ -21,7 +22,7 @@ const Hero = () => {
               variants={container(0)}
               initial="hidden"
               animate="visible"
-              className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl"
+              className="pb-8 lg:pb-16 text-5xl sm:text-6xl font-extralight sm:font-thin tracking-tight lg:mt-16 lg:text-8xl"
             >
               Bikram Bhusal
             </motion.h1>
@@ -59,10 +60,10 @@ const Hero = () => {
             </motion.div>
           </section>
         </div>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center hover:scale-105 transition-all duration-200 ease-in-out ">
           <motion.img
-            className="sm:rounded-2xl rounded-full"
             initial={{ x: 100, opacity: 0 }}
+            className="lg:rounded-2xl rounded-full max-w-[16rem] sm:max-w-xs lg:max-w-md "
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
             src={profilePic}
@@ -72,6 +73,6 @@ const Hero = () => {
       </section>
     </main>
   );
-};
+});
 
 export default Hero;

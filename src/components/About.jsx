@@ -1,8 +1,11 @@
+import React, { forwardRef } from "react";
 import aboutImage from "../assets/about.jpg";
-import { ABOUT_TEXT_1 } from "../constants";
-import { ABOUT_TEXT_2 } from "../constants";
-import { ABOUT_TEXT_3 } from "../constants";
-import { ABOUT_TEXT_4 } from "../constants";
+import {
+  ABOUT_TEXT_1,
+  ABOUT_TEXT_2,
+  ABOUT_TEXT_3,
+  ABOUT_TEXT_4,
+} from "../constants";
 import { motion } from "framer-motion";
 
 var container = (delay) => ({
@@ -10,14 +13,14 @@ var container = (delay) => ({
   visible: { x: 0, opacity: 1, transition: { duration: 1, delay: delay } },
 });
 
-const About = ({refs}) => {
+const About = forwardRef((props, ref) => {
   return (
-    <main ref={refs} className="border-b border-neutral-900 pb-4">
+    <main ref={ref} className="border-b border-neutral-900 pb-4">
       <motion.h1
         initial={{ y: 100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}
-        className="my-20 text-center text-4xl"
+        className="my-10 lg:my-20 text-center text-4xl"
       >
         About
         <span className="text-neutral-400"> Me</span>
@@ -81,6 +84,6 @@ const About = ({refs}) => {
       </section>
     </main>
   );
-};
+});
 
 export default About;

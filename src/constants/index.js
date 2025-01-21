@@ -31,27 +31,12 @@ export const EXPERIENCES = [
     technologies: [
       "React",
       "NextJS",
-      "Aceternity-UI",
-      "Material-UI",
       "TypeScript",
+      "AceternityUI",
+      "MaterialUI",
     ],
   },
 ];
-//   {
-//     year: "2021 - 2022",
-//     role: "Full Stack Developer",
-//     company: "Facebook",
-//     description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-//     technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-//   },
-//   {
-//     year: "2020 - 2021",
-//     role: "Software Engineer",
-//     company: "Paypal",
-//     description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-//     technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
-//   },
-// ];
 
 export const PROJECTS = [
   {
@@ -78,8 +63,8 @@ export const PROJECTS = [
     gitLink: "https://github.com/bikki10/chef-mistral",
     link: "https://chef-mistral.netlify.app/",
     description:
-      "A stock-market website that provides data and information related to the stocks of Australian Stock Market.",
-    technologies: ["NextJS", "SCSS", "Tailwind", "Material-UI", "Django"],
+      "An AI-Powered web-application that recommends different food recipes.",
+    technologies: ["React", "Tailwind", "MaterialUI"],
   },
   {
     title: "TickerPlace",
@@ -88,12 +73,12 @@ export const PROJECTS = [
     link: "https://dev.tickerplace.com",
     description:
       "A stock-market website that provides data and information related to the stocks of Australian Stock Market.",
-    technologies: ["NextJS", "SCSS", "Tailwind", "Material-UI", "Django"],
+    technologies: ["NextJS", "SCSS", "Tailwind", "Django", "MaterialUI"],
   },
 ];
 
 export const CONTACT = {
-  address: "Kathmandu, New Baneshwor, Nepal ",
+  address: " Kathmandu, Nepal ",
   phoneNo: "+977-9860729085 ",
   email: "bhusalbikram75@gmail.com",
 };
